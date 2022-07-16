@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Prices">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/hero" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/header2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="Apartment Cleaning Services"
+                            android:textAllCaps="false"
+                            android:textColor="@color/purple"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="Full/Half cleanup"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/description1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="fill_horizontal"
+                            android:justificationMode="inter_word"
+                            android:text="Among the cleaning services in Colombo, our cleaning services implement the eco-friendliest ways to keep your apartment orderly and well-kept. While you are preoccupied with your daily routine, you can stop worrying about apartment cleaning as our teams attend to deliver you a spotless environment, matching your anticipations, daily, in order to maintain your healthy living standard."
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="$ 450.0"
+                            android:textAllCaps="false"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/hero"
+                        android:layout_margin="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/header1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="Domestic House Cleaning Services"
+                            android:textAllCaps="false"
+                            android:textColor="@color/purple"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/subtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="Full/Half cleanup"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="mong the cleaning services in Colombo, our cleaning services implement the eco-friendliest ways to keep your apartment orderly and well-kept. While you are preoccupied with your daily routine, you can stop worrying about apartment cleaning as our teams attend to deliver you a spotless environment, matching your anticipations, daily, in order to maintain your healthy living standard."
+                            android:textAllCaps="false"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="fill_horizontal"
+                            android:justificationMode="inter_word"
+                            android:textColor="@color/black"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="$ 250.0"
+                            android:textAllCaps="false"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/description3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="fill_horizontal"
+                            android:justificationMode="inter_word"
+                            android:text="Regular cleaning from a cleaning service usually happens on a weekly basis. The goal is to keep up with basic cleaning tasks.The frequency of regular cleaning is usually at least once per week. A regular cleaning service typically doesn’t take as long as a deep clean, so it generally costs less."
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/hero"
+                        android:layout_margin="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/header3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="Regular Cleaning Services"
+                            android:textAllCaps="false"
+                            android:textColor="@color/purple"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/subtitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="Full/Half cleanup"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey"
+                            android:textSize="15dp" />
+
+
+                        <TextView
+                            android:id="@+id/price3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="$ 750.0"
+                            android:textAllCaps="false"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/hero"
+                        android:layout_margin="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/header4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="Deep Cleaning Services"
+                            android:textAllCaps="false"
+                            android:textColor="@color/purple"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/subtitle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="Full/Half cleanup"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/description4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="Deep cleaning goes further to get rid of dirt, grime, soap scum, and other gunk around your home. It’s a more thorough service than the standard cleaning.Deep cleaning can make your home a healthier environment by getting rid of dirt, dust, and other junk. It also makes it look and smell fresh and clean"
+                            android:textAllCaps="false"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="fill_horizontal"
+                            android:justificationMode="inter_word"
+                            android:textColor="@color/black"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/price4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="$ 1250.0"
+                            android:textAllCaps="false"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
