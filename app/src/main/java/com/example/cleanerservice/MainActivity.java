@@ -9,9 +9,9 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.cleanerservice.activity.Landing_Screen;
-import com.example.cleanerservice.activity.Registration;
-import com.example.cleanerservice.activity.SignUpHome;
+import com.example.cleanerservice.activity.ConstrLogin;
+import com.example.cleanerservice.activity.UserLogin;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 //        getSupportActionBar().setIcon(R.drawable.ic_baseline_logout_24);
 
 
-        Button btn = (Button) findViewById(R.id.registerBtn);
-        Button login = (Button) findViewById(R.id.loginBtn);
+        Button btn = (Button) findViewById(R.id.homeBtn);
+        Button login = (Button) findViewById(R.id.constBtn);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,11 +51,11 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     public void openRegistration(){
-        Intent intent = new Intent(this, SignUpHome.class);
+        Intent intent = new Intent(this, UserLogin.class);
         startActivity(intent);
     }
     public void openLogin(){
-        Intent intent = new Intent(this, Landing_Screen.class);
+        Intent intent = new Intent(this, ConstrLogin.class);
         startActivity(intent);
     }
 }

@@ -7,7 +7,7 @@ public class Constructor {
     private String dob;
     private String gender;
     private String email;
-    private String phone;
+    private int phone;
     private String address;
     private String postalCode;
     private String homeTown;
@@ -63,11 +63,11 @@ public class Constructor {
         this.email = email;
     }
 
-    public String getPhone() {
+    public int getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(int phone) {
         this.phone = phone;
     }
 

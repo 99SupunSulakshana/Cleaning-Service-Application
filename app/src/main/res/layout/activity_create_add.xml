@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.createAdd">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your advertisement"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/grey"
+        android:textSize="20dp"
+        android:textAllCaps="false"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advertisement ID"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"/>
+
+            <EditText
+                android:id="@+id/addId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ID"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advertisement Owner Name"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"/>
+
+            <EditText
+                android:id="@+id/addName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Correct Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"/>
+
+            <EditText
+                android:id="@+id/addLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Location"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"/>
+
+            <EditText
+                android:id="@+id/addDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Description(max Line 5)"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textPackageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Package Name"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"/>
+
+            <Spinner
+                android:id="@+id/addspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Package Price"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"/>
+
+            <EditText
+                android:id="@+id/addPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Package price"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select your home image - FrontView"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="3dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textwarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cleaners can get a proper idea for your home. Therefore, add a clear Image."
+                    android:textSize="17sp"
+                    android:textAlignment="inherit"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="3dp"
+                    android:textColor="@color/red"/>
+                <ImageView
+                    android:id="@+id/logo1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Cleaning logo"
+                    android:scaleType="fitXY"
+                    android:clickable="true"
+                    android:src="@drawable/home"
+                    android:transitionName="" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"/>
+
+            <EditText
+                android:id="@+id/addEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+            <TextView
+                android:id="@+id/textContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"/>
+
+            <EditText
+                android:id="@+id/addContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contact"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Create date and Valid Days"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"/>
+
+            <EditText
+                android:id="@+id/addDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="2022/07/07 - 10 Days Valid"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/saveAdd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/style"
+                android:text="SAVE"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

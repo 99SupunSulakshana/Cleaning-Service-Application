@@ -5,34 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.Registration2">
+    tools:context=".activity.CleanerProfile">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/frame_layout">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="250dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="Cleaning logo"
-                android:scaleType="fitXY"
-                android:src="@drawable/second_logo"
-                android:transitionName="" />
-        </LinearLayout>
-    </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,11 +19,12 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:gravity="center"
-            android:text="REGISTRATION FORM" />
+            android:text="Profile Details" />
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
 
             <LinearLayout
@@ -70,7 +45,7 @@
                     android:layout_marginStart="3dp"/>
 
                 <EditText
-                    android:id="@+id/conid"
+                    android:id="@+id/conidc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -88,7 +63,7 @@
                     android:layout_marginStart="3dp"/>
 
                 <EditText
-                    android:id="@+id/conFullName"
+                    android:id="@+id/conFullNamec"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -106,7 +81,7 @@
                     android:layout_marginStart="3dp"/>
 
                 <EditText
-                    android:id="@+id/conNic"
+                    android:id="@+id/conNicc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -124,7 +99,7 @@
                     android:layout_marginStart="3dp"/>
 
                 <EditText
-                    android:id="@+id/condob"
+                    android:id="@+id/condobc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -144,14 +119,14 @@
                         android:textSize="17sp"
                         android:layout_marginStart="3dp"/>
                     <RadioButton
-                        android:id="@+id/conMale"
+                        android:id="@+id/conMalec"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Male"
                         android:textSize="17sp"/>
 
                     <RadioButton
-                        android:id="@+id/conFemale"
+                        android:id="@+id/conFemalec"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Female"
@@ -168,7 +143,7 @@
                     android:layout_marginStart="3dp"/>
 
                 <EditText
-                    android:id="@+id/conEmail"
+                    android:id="@+id/conEmailc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -186,7 +161,7 @@
                     android:textSize="17sp"/>
 
                 <EditText
-                    android:id="@+id/conPhone"
+                    android:id="@+id/conPhonec"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -204,7 +179,7 @@
                     android:layout_marginStart="3dp" />
 
                 <EditText
-                    android:id="@+id/conAddress"
+                    android:id="@+id/conAddressc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -222,7 +197,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/conPostalCode"
+                    android:id="@+id/conPostalCodec"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -240,7 +215,7 @@
                     android:textColor="@color/black"/>
 
                 <EditText
-                    android:id="@+id/conHometown"
+                    android:id="@+id/conHometownc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -256,7 +231,7 @@
                     android:textColor="@color/black"/>
 
                 <EditText
-                    android:id="@+id/conPassword"
+                    android:id="@+id/conPasswordc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -273,7 +248,7 @@
                     android:textColor="@color/black"/>
 
                 <EditText
-                    android:id="@+id/aboutMe"
+                    android:id="@+id/aboutMec"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -282,26 +257,41 @@
                     android:inputType="textMultiLine" />
 
                 <Spinner
-                    android:id="@+id/spinner2"
+                    android:id="@+id/spinner2c"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:layout_margin="10dp"
                     />
-
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
-    <Button
-        android:id="@+id/saveCon"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:background="@drawable/style"
-        android:text="SUBMIT"
-        android:textAllCaps="false"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/removeBtnc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:color/transparent"
+            android:textColor="@color/red"
+            android:text="Remove" />
+
+        <Button
+            android:id="@+id/EditBtnc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:color/transparent"
+            android:textColor="@color/lightblue"
+            android:layout_weight="1"
+            android:text="Edit" />
+    </LinearLayout>
+
 </LinearLayout>

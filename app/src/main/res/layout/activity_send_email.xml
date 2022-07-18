@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SendEmail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtReviewTitleSM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send the Email"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/txtReviewsubtitleSM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact and more discuss With your workers/others"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/red"/>
+            <View style="@style/Divider" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:layout_marginStart="3dp"
+                android:textSize="17sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/custPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Enter email address"
+                android:minHeight="48dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:layout_marginStart="3dp"
+                android:textSize="17sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Enter Subject"
+                android:minHeight="48dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:layout_marginStart="3dp"
+                android:textSize="17sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxLines="10"
+                android:inputType="textPassword"
+                android:hint="Message"
+                android:minHeight="48dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Send"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_gravity="center_horizontal|center"
+        android:background="@drawable/style"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        />
+</LinearLayout>

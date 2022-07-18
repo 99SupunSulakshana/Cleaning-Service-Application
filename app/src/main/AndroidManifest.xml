@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.cleanerservice">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +17,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CleanerService"
         tools:targetApi="31">
+
+        <activity android:name=".activity.DisplayReviews"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.CleanerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SendEmail"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Review"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdvertisementDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Workers"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DisplayUsers"
+            android:exported="false" />
+        <activity
+            android:name=".activity.createAdd"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CleanerLanding"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ConstrLogin"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserLogin"
+            android:exported="false" />
         <activity
             android:name=".activity.About"
             android:exported="false" />

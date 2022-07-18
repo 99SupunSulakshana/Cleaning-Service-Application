@@ -9,11 +9,10 @@ public class Advertisement {
     private String addPackageName;
     private String addPackagePrice;
     private byte[] addFrontImage;
-    private byte[] addBackImage;
-    private byte[] addInsideImageOne;
-    private byte[] addInsideImageTwo;
     private String addEmail;
-    private String addContact;
+    private int addContact;
+    private String addDate;
+
 
     public int getAddId() {
         return addId;
@@ -71,30 +70,6 @@ public class Advertisement {
         this.addFrontImage = addFrontImage;
     }
 
-    public byte[] getAddBackImage() {
-        return addBackImage;
-    }
-
-    public void setAddBackImage(byte[] addBackImage) {
-        this.addBackImage = addBackImage;
-    }
-
-    public byte[] getAddInsideImageOne() {
-        return addInsideImageOne;
-    }
-
-    public void setAddInsideImageOne(byte[] addInsideImageOne) {
-        this.addInsideImageOne = addInsideImageOne;
-    }
-
-    public byte[] getAddInsideImageTwo() {
-        return addInsideImageTwo;
-    }
-
-    public void setAddInsideImageTwo(byte[] addInsideImageTwo) {
-        this.addInsideImageTwo = addInsideImageTwo;
-    }
-
     public String getAddEmail() {
         return addEmail;
     }
@@ -103,11 +78,19 @@ public class Advertisement {
         this.addEmail = addEmail;
     }
 
-    public String getAddContact() {
+    public int getAddContact() {
         return addContact;
     }
 
-    public void setAddContact(String addContact) {
+    public void setAddContact(int addContact) {
         this.addContact = addContact;
+    }
+
+    public String getAddDate() {
+        return addDate;
+    }
+
+    public void setAddDate(String addDate) {
+        this.addDate = addDate;
     }
 }

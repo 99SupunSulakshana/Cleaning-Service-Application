@@ -169,19 +169,7 @@
                             android:textColor="@color/red"
                             android:textSize="15dp" />
 
-                        <TextView
-                            android:id="@+id/description3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_weight="1"
-                            android:gravity="fill_horizontal"
-                            android:justificationMode="inter_word"
-                            android:text="Regular cleaning from a cleaning service usually happens on a weekly basis. The goal is to keep up with basic cleaning tasks.The frequency of regular cleaning is usually at least once per week. A regular cleaning service typically doesn’t take as long as a deep clean, so it generally costs less."
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textSize="10dp" />
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -234,6 +222,20 @@
                             android:textAllCaps="false"
                             android:textColor="@color/grey"
                             android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/description3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="fill_horizontal"
+                            android:justificationMode="inter_word"
+                            android:text="Regular cleaning from a cleaning service usually happens on a weekly basis. The goal is to keep up with basic cleaning tasks.The frequency of regular cleaning is usually at least once per week. A regular cleaning service typically doesn’t take as long as a deep clean, so it generally costs less."
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="10dp" />
 
 
                         <TextView

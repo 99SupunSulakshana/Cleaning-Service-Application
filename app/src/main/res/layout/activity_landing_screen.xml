@@ -97,6 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_weight="1"
         tools:ignore="SpeakableTextPresentCheck">
     <LinearLayout
         android:layout_width="match_parent"
@@ -116,7 +117,7 @@
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:rowCount="3"
+            app:rowCount="6"
             app:columnCount="2"
             android:layout_margin="10dp">
 
@@ -127,6 +128,8 @@
                 app:layout_row="0"
                 app:layout_column="0"
                 app:layout_gravity="fill"
+                android:clickable="true"
+                android:id="@+id/sellCard"
                 app:layout_rowWeight="1"
                 app:layout_columnWeight="1"
                 android:layout_margin="8dp"
@@ -160,6 +163,7 @@
                         android:textColor="@color/purple"
                         android:textSize="15sp"
                         android:textStyle="normal"/>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -169,6 +173,7 @@
                 android:layout_height="200dp"
                 app:layout_row="0"
                 app:layout_column="1"
+                android:id="@+id/viewAdds"
                 app:layout_gravity="fill"
                 app:layout_rowWeight="1"
                 app:layout_columnWeight="1"
@@ -195,7 +200,7 @@
                         android:id="@+id/textView20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Workers"
+                        android:text="View Adds"
                         android:textAllCaps="false"
                         android:layout_margin="10dp"
                         android:layout_gravity="center"
@@ -250,7 +255,6 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -292,6 +296,7 @@
                 android:layout_width="100dp"
                 android:layout_height="200dp"
                 app:layout_row="1"
+                android:id="@+id/reviewsCard"
                 app:layout_column="1"
                 app:layout_gravity="fill"
                 app:layout_rowWeight="1"
@@ -331,7 +336,9 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/allreviews"
                 android:layout_width="100dp"
+                android:clickable="true"
                 android:layout_height="200dp"
                 app:layout_row="2"
                 app:layout_column="0"
@@ -354,7 +361,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/profile"
+                        app:srcCompat="@drawable/review"
                         android:layout_margin="10dp"/>
 
                     <TextView
@@ -363,7 +370,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-                        android:text="Profile"
+                        android:text="All Reviews"
                         android:textAlignment="center"
                         android:textAllCaps="false"
                         android:textColor="@color/purple"
@@ -415,8 +422,150 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/allUsersCard"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                app:layout_row="3"
+                android:clickable="true"
+                app:layout_column="0"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/users"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/userListMt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="All Users"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cleanerList"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                app:layout_row="3"
+                android:clickable="true"
+                app:layout_column="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/cleanerImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/users"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/cleanerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All Cleaners"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple"
+                        android:textSize="15sp"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myProfile"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                app:layout_row="4"
+                android:clickable="true"
+                app:layout_column="0"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/profile"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Profile"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple"
+                        android:textSize="15sp"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </androidx.gridlayout.widget.GridLayout>
     </LinearLayout>
     </ScrollView>
+    <Button
+        android:id="@+id/logoutBtnA"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:background="@android:color/transparent"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@color/purple"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </LinearLayout>

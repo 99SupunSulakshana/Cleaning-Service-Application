@@ -4,9 +4,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="i_am_a_constructor">I AM A CONSTRUCTOR</string>
     <string name="constrctor">I AM A CONSTRUCTOR</string>
+    <string name="cleaning_app_users">Cleaning App Users</string>
 
     <string-array name="charactors">
         <item>Constructor</item>
         <item>User</item>
+    </string-array>
+
+    <string-array name="packages">
+        <item>Apartment</item>
+        <item>DomesticHouse</item>
+        <item>Regular</item>
+        <item>Deep</item>
     </string-array>
 </resources>
