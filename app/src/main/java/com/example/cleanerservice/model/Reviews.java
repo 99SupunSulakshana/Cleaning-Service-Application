@@ -1,6 +1,6 @@
 package com.example.cleanerservice.model;
 
-public class Review {
+public class Reviews {
     private int id;
     private String name;
     private String message;

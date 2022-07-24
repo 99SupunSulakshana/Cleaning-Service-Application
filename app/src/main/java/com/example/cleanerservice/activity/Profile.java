@@ -2,6 +2,7 @@ package com.example.cleanerservice.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -31,6 +32,7 @@ public class Profile extends AppCompatActivity {
         Button save = (Button) findViewById(R.id.saveCust);
 
         // Default Values Set into TextField. It's easy to Test Our App
+
         id.setText("1");
         fullname.setText("Madurangi Malsha");
         email.setText("mm@gmail.com");

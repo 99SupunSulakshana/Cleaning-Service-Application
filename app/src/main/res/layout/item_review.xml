@@ -19,7 +19,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/txtrId"
+                android:id="@+id/txtIdR"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -47,7 +47,7 @@
                     android:textAllCaps="false"
                     />
                 <TextView
-                    android:id="@+id/txtmsg"
+                    android:id="@+id/txtmsgR"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="To gain a Cleaning position with Carlitz Hotel where comprehensive cleaning skills, certification in public health, and 5 years of providing sanitation services will be put to maximum use."

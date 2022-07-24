@@ -148,6 +148,7 @@ public class Landing_Screen extends AppCompatActivity {
     public void logout(){
         Intent intent = new Intent(this, UserLogin.class);
         startActivity(intent);
-        finish();
+        this.finish();
+        System.exit(0);
     }
 }

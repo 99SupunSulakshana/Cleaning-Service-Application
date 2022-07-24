@@ -51,7 +51,7 @@ public class Registration extends AppCompatActivity {
         address.setText("Ehaliyagoda, Rathanapura");
         postalcode.setText("123-EL");
         hometwon.setText("Rathnapura");
-        password.setText("1234m");
+        password.setText("123m");
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.charactors, android.R.layout.simple_spinner_item);

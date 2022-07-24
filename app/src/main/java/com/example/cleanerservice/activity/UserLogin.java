@@ -13,16 +13,24 @@ import android.widget.Toast;
 
 import com.example.cleanerservice.DBHandler.DBHandler;
 import com.example.cleanerservice.R;
+import com.example.cleanerservice.sharedpreference.SessionManager;
 
 public class UserLogin extends AppCompatActivity {
     DBHandler db;
     Cursor cursor;
     EditText email, password;
+    private SessionManager session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
         db = new DBHandler(this);
+        session = new SessionManager(getApplicationContext());
+        if (session.isLoggedIn()){
+            Intent intent = new Intent(UserLogin.this, Landing_Screen.class);
+            startActivity(intent);
+        }
+        session = new SessionManager(getApplicationContext());
 
         Button login = (Button) findViewById(R.id.loginBtn);
         Button register = (Button) findViewById(R.id.registerBtn);
@@ -71,6 +79,8 @@ public class UserLogin extends AppCompatActivity {
     public void login(){
         Intent intent = new Intent(this, Landing_Screen.class);
         startActivity(intent);
+        session.setLogin(true);
+        finish();
     }
     public void regsitration(){
         Intent intent = new Intent(this, SignUpHome.class);

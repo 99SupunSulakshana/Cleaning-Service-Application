@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,7 +38,8 @@ public class DisplayUsers extends AppCompatActivity {
             }
 
         }catch (Exception e){
-
+            Toast.makeText(this, "No users available", Toast.LENGTH_SHORT).show();
+            Log.e("Error :", e.getMessage());
         }
     }
 }

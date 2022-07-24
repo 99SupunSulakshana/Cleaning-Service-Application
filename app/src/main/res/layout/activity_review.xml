@@ -104,7 +104,7 @@
                 android:layout_marginStart="3dp"/>
 
             <EditText
-                android:id="@+id/reviewCreateDate"
+                android:id="@+id/reviewcrt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -126,7 +126,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/home"
+        android:id="@+id/savervw"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:text="Save"

@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 
 import com.example.cleanerservice.model.Advertisement;
 import com.example.cleanerservice.model.Constructor;
+import com.example.cleanerservice.model.Reviews;
 import com.example.cleanerservice.model.User;
 
 import java.util.ArrayList;
@@ -99,6 +100,17 @@ public long insert_add(Advertisement advertisement){
     contentValues.put("DATE", advertisement.getAddDate());
 
     return db.insert("tblAdvertisement", null, contentValues);
+}
+
+public long insert_review(Reviews reviews){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("rID", reviews.getId());
+        contentValues.put("NAME", reviews.getName());
+        contentValues.put("MESSAGE", reviews.getMessage());
+        contentValues.put("CREATEAT", reviews.getCreateAt());
+
+    return db.insert("tblReview", null, contentValues);
 }
 
 public Boolean checkusernamepassword(String useremail, String userpassword){
@@ -192,6 +204,25 @@ public Boolean checkcredits(String conname, String conpassword){
             }
         }
         return advertisements;
+    }
+
+    public ArrayList<Reviews> viewAllreviews(){
+        SQLiteDatabase db = getReadableDatabase();
+        String sql = "SELECT * FROM tblReview";
+        Cursor cursor = db.rawQuery(sql, null);
+        int count = cursor.getCount();
+        ArrayList<Reviews> reviews = new ArrayList<Reviews>();
+        if(count!=0){
+            while (cursor.moveToNext()){
+                Reviews review = new Reviews();
+                review.setId(cursor.getInt(0));
+                review.setName(cursor.getString(1));
+                review.setMessage(cursor.getString(2));
+                review.setCreateAt(cursor.getString(3));
+                reviews.add(review);
+            }
+        }
+        return reviews;
     }
 
 }
