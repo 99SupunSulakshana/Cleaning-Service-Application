@@ -56,11 +56,11 @@ public class AdvertisemntAdapter extends BaseAdapter {
        imageView = (ImageView) v.findViewById(R.id.addPic);
 
         Advertisement advertisement = advertisements.get(i);
-        //fullname.setText(advertisement.getAddName());
+        fullname.setText(advertisement.getAddName());
         email.setText(advertisement.getAddEmail());
         phone.setText(""+advertisement.getAddContact());
-       // location.setText(advertisement.getAddLocation());
-      //  aboutme.setText(advertisement.getAddDescription());
+        location.setText(advertisement.getAddLocation());
+        aboutme.setText(advertisement.getAddDescription());
         pkgname.setText(advertisement.getAddPackageName());
         pkgprice.setText(advertisement.getAddPackagePrice());
         Bitmap bitmap = BitmapFactory.decodeByteArray(advertisement.getAddFrontImage(),0,advertisement.getAddFrontImage().length);

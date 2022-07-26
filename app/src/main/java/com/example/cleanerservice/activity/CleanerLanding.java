@@ -133,7 +133,7 @@ public class CleanerLanding extends AppCompatActivity {
     }
 
     public void logoutCard(){
-        Intent intent = new Intent(this, ConstrLogin.class);
+        Intent intent = new Intent(this, SignUpHome.class);
         startActivity(intent);
         this.finish();
         System.exit(0);

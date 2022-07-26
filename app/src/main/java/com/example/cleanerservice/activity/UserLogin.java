@@ -26,10 +26,10 @@ public class UserLogin extends AppCompatActivity {
         setContentView(R.layout.activity_user_login);
         db = new DBHandler(this);
         session = new SessionManager(getApplicationContext());
-        if (session.isLoggedIn()){
-            Intent intent = new Intent(UserLogin.this, Landing_Screen.class);
-            startActivity(intent);
-        }
+//        if (session.isLoggedIn()){
+//            Intent intent = new Intent(UserLogin.this, Landing_Screen.class);
+//            startActivity(intent);
+//        }
         session = new SessionManager(getApplicationContext());
 
         Button login = (Button) findViewById(R.id.loginBtn);

@@ -29,8 +29,8 @@ public class ConstrLogin extends AppCompatActivity {
         username = findViewById(R.id.emailCon);
         password = findViewById(R.id.passwordCon);
 
-        username.setText("");
-        password.setText("");
+        username.setText("kmendis@gmail.com");
+        password.setText("123P");
 
 
         login.setOnClickListener(new View.OnClickListener() {

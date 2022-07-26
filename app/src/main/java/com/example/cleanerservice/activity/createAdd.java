@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -59,6 +60,7 @@ public class createAdd extends AppCompatActivity {
         description.setText("We have some cleaning job vacancies in this time period. Any person or organization can apply this.");
         email.setText("mm@gmail.com");
         contact.setText("0711327510");
+        pic1.setImageResource(R.drawable.home);
         date.setText("2022/07/17 Valid Dates = 7");
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.packages, android.R.layout.simple_spinner_item);
@@ -136,8 +138,10 @@ public class createAdd extends AppCompatActivity {
         location.setText("");
         description.setText("");
         email.setText("");
+        pic1.setImageResource(0);
         contact.setText("");
         packagePrice.setText("");
+
     }
 
     @Override
